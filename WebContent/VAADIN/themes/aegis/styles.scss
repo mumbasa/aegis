@@ -1,0 +1,300 @@
+@import "addons.scss";
+@import "aegis.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in aegis.scss */
+.aegis {
+  @include addons;
+  @include aegis;
+
+
+  body {
+    color: #767676;
+    font-family: "Open Sans",sans-serif;
+    text-rendering: optimizelegibility;
+}
+
+  html{
+
+text-rendering: optimizelegibility !important;
+  }
+  .lef{
+  float:right;
+  }
+  
+ .topbar{
+ height: 80px;
+ padding:20px;
+ width:100%;
+ background-color:#fff;
+ box-shadow: 3px 3px 2px #333;
+ }
+  
+     .Heading{
+  width:100%;
+color:#fff;
+font-weight:bold;
+  padding:15px;
+   background-color:#1FB5AD;
+   margin-bottom:10px;
+   
+   } 
+   
+  .profilewin .v-window-outerheader,.profilewin .v-window-maximizebox,.profilewin .v-window-closebox,.profilewin .v-window-restorebox {
+    border-color: #EFF2F7;
+   background-color:#1FB5AD;
+   color:#fff;
+   font-weight:bold;
+   padding:5px 0 5px 0;
+  } 
+  
+  .profilewin .v-window-header{
+     color:#fff;
+  }
+        .tit{
+  border-color: #EFF2F7;
+font-size: 13px;
+font-weight: 400;
+background: none repeat scroll 0% 0% #FAFAFA;
+text-transform: uppercase;
+padding: 15px;
+width:100%;
+   
+   } 
+  
+  .top-details{
+  background: none repeat scroll 0% 0% #1FB5AD;
+
+width: 230px;
+height: 80px;
+position: relative;
+color: #FFF;
+font-weight:700;
+text-align:center;
+line-height:75px;
+padding-left:20px;
+  }
+  
+ .sidebar{
+width: 250px;
+height: 100%;
+position: fixed;
+background: none repeat scroll 0% 0% #32323A;
+transition: all 0.3s ease-in-out 0s;
+ }
+ 
+ .sidebar .v-button{
+ background:none;
+ border:none;
+  box-shadow:none;
+  width: 250px;
+  text-align:left;
+  color:#AEB2B7;
+  font-family: "Open Sans",sans-serif;
+ }
+ 
+ .v-menubar,.v-menubar-menuitem{
+ background:none;
+ border:none;
+  box-shadow:none;
+
+ }
+ 
+ .aegis .v-menubar > .v-menubar-menuitem{
+ border-top-style: none;
+border-right-style-value: none;
+border-bottom-style: none;
+border-left-style-value: none;
+
+ 
+ }
+ 
+ 
+   .v-menubar > .v-menubar-menuitem {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    color: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 0px;
+    border-style: none;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    background: none repeat scroll 0% 0% transparent;
+    box-shadow: none;
+    border-width: 0px 1px 0px 0px;
+    border-color: inherit;
+    height: 100%;
+    line-height: inherit;
+    vertical-align: top;
+    text-align: center;
+}
+ 
+ .sidebar .v-button-wrap{
+ line-height:15px;
+ font-size: 12px;
+ }
+  
+  .username{
+  border-radius:10px;
+  border: 1px solid #F6F6F6;
+background: none repeat scroll 0% ;
+  }
+
+  .formleft{
+padding:10px 20px 0 0;
+
+  border-right: 1px solid #efefef;
+background: none repeat scroll 0% ;
+  }
+
+
+
+.v-textfield,.v-filterselect {
+
+}
+
+.v-button{
+box-shadow:none;
+}
+
+
+
+  .main{
+  	background-color:#fff;
+  overflow:auto;
+
+  font-size:14px;
+  }
+  
+  
+  .main .v-textfield{
+  border-top:none;
+  border-left:none;
+   border-right:none;
+  box-shadow:none;
+  border-radius:0;
+  }
+  
+  
+   .topbar-buttons .v-button,.lockWindow .v-button{
+  	background:none;
+  	border:none;
+  	 font-size:1.5em;
+  }
+  .paddings{
+  margin:10px;
+  }
+  
+    .pads{
+  margin-left:10px;
+  }
+  
+  .main .v-caption {
+  overflow:auto;
+  font-size:12px;
+  }
+
+.v-table-header-cell{
+font-weight:bold;
+text-transform:Capitalize;
+}
+.v-table-cell-content{
+font-size:14px;
+text-transform:Capitalize;
+}
+
+  
+  .profilepic{
+  border-radius:40px;
+  }
+  
+  .v-table .v-selected{
+    background: #1FB5AD;
+	font-weight:bold;
+	background-image: none;
+	color:#fff;
+}
+
+.loginpanel {
+    background: none repeat scroll 0% 0% #FFF;
+    color: #474747;
+    border-radius: 4px;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    min-width:308px;
+    max-width: 42%;
+        
+    animation: 800ms ease 10ms normal backwards 1 running valo-animate-in-slide-up, 600ms ease 100ms normal backwards 1 running valo-animate-in-fade;
+}
+.wellogin {
+   padding:15px;
+}
+.loginbut{
+vertical-align: bottom;
+height: 37px;
+color: #ECF2F8;
+border-radius: 4px;
+border-width: 1px;
+border-style: solid;
+border-right: 1px solid #1362B1;
+border-left: 1px solid #1362B1;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-image: none;
+border-color: #156AB3 #1362B1 #1156A8;
+background-color: #197DE1;
+background-image: linear-gradient(to bottom, #1B87E3 2%, #166ED5 98%);
+box-shadow: 0px 1px 0px #4D98E6 inset, 0px -1px 0px #166BCA inset, 0px 2px 3px rgba(0, 0, 0, 0.05);
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+padding: 0px 19px;
+font-weight: bold;
+min-width: 81px;
+}
+.login{
+ background-color:#1FB5AD;
+}
+.logform{
+margin-bottom:30px;
+}
+.headers{
+text-transform:Uppercase;
+font-weight:bold;
+text-align:center;
+}
+
+.figures{
+text-transform:Uppercase;
+font-weight:bold;
+text-align:center;
+font-size:3em;
+}
+.v-tree-node-caption{
+color:#eee;
+font-size:13px;
+}
+.aegis .v-tree-node-selected{
+background-image:none;
+background-color:none;
+}
+
+.v-Notification.success{
+    color: #3c763d;
+    background-image:none;
+    background: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+}
